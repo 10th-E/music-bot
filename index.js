@@ -8,6 +8,7 @@ client.distube = new DisTube.DisTube(client, { searchSongs: 0, emitNewSongOnly: 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 client.config = require("./config.json");
+require('dotenv').config();
 
 fs.readdir('./commands/music/', (err, files) => {
   if (err) return console.log('Could not find any music commands!')
@@ -57,6 +58,8 @@ client.login(tkn)
 }
 
 run(process.env.TOKEN)
+run(process.env.TOKEN_2)
+run(process.env.TOKEN_3)
 
 const express = require("express")()
 express.all('/', function(req, res) {
