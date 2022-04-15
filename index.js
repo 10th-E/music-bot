@@ -1,4 +1,4 @@
-function run(tkn){
+function run(tkn, pfx){
 const Discord = require("discord.js");
 const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_VOICE_STATES', 'GUILD_MESSAGES', 'DIRECT_MESSAGES', 'GUILD_BANS', 'GUILD_EMOJIS_AND_STICKERS', 'GUILD_MEMBERS', 'GUILD_MESSAGE_REACTIONS', 'GUILD_INTEGRATIONS', 'GUILD_PRESENCES', 'GUILD_SCHEDULED_EVENTS', 'DIRECT_MESSAGE_TYPING', 'GUILD_INVITES'], allowedMentions: { parse: ['users'], repliedUser: true } });
 const fs = require("fs");
@@ -7,7 +7,7 @@ const { SpotifyPlugin } = require("@distube/spotify");
 client.distube = new DisTube.DisTube(client, { searchSongs: 0, emitNewSongOnly: true, leaveOnFinish: true, plugins: [new SpotifyPlugin()], youtubeCookie: process.env.YOUTUBE_COOKIE });
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
-client.config = require("./config.json");
+client.prefix = pfx;
 
 fs.readdir('./commands/music/', (err, files) => {
   if (err) return console.log('Could not find any music commands!')
@@ -56,9 +56,9 @@ for (const file of distubeEvents) {
 client.login(tkn)
 }
 
-run(process.env.TOKEN)
-run(process.env.TOKEN_2)
-run(process.env.TOKEN_3)
+run(process.env.TOKEN, "e!")
+run(process.env.TOKEN_2, "p!")
+run(process.env.TOKEN_3, "t!")
 
 const express = require("express")()
 express.all('/', function(req, res) {

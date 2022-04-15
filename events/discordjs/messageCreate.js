@@ -3,7 +3,7 @@ module.exports = {
   name: "messageCreate",
   async execute(message){
     const client = message.client
-    var prefix = client.config.prefix
+    var prefix = client.prefix
     if (message.author.bot || !message.guild) return;
     if (!message.content.startsWith(prefix)) return;
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
