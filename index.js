@@ -60,8 +60,8 @@ run(process.env.TOKEN, "e!")
 run(process.env.TOKEN_2, "p!")
 run(process.env.TOKEN_3, "t!")
 
-const express = require("express")()
+/*const express = require("express")()
 express.all('/', function(req, res) {
   res.send("E")
 })
-express.listen(process.env.PORT, console.log("Started"))
+express.listen(process.env.PORT, console.log("Started"))*/
