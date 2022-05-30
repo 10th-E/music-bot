@@ -4,7 +4,7 @@ A Discord Music Bot Based on [DisTube](https://distube.js.org/). <br>
 # How to Self-Host
 Download or Clone The Repository. <br>
 Run this command (Make sure NodeJS is Installed)<br>
-```npm install```
+```npm install```<br>
 Now run <br>
 ```npm start```
 This will get the bot up and running.
