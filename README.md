@@ -1,5 +1,5 @@
 # Music Bot
-A Discord Music Bot Based on [DisTube](https://distube.js.org/). <br>
+A Discord Music Bot Made Using [DisTube](https://distube.js.org/). <br>
 
 # How to Self-Host
 Download or Clone The Repository. <br>
