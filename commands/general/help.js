@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 module.exports = {
   name: "help",
   run: async (client, message, args) => {
-    var p = client.config.prefix
+    var p = client.prefix
     const infoEmbed = new Discord.MessageEmbed()
 	    .setColor('#57a3bd')
 	    .setTitle('Help')
