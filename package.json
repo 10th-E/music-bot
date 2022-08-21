@@ -28,6 +28,7 @@
     "libsodium-wrappers": "^0.7.9",
     "node-fetch-commonjs": "^3.1.1",
     "opusscript": "0.0.8",
-    "string-progressbar": "^1.0.4"
+    "string-progressbar": "^1.0.4",
+    "ytdl-core": "^4.11.0"
   }
 }
