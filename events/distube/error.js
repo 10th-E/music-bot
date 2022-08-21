@@ -7,5 +7,6 @@ module.exports = {
 		  return;
 	  }
 	  channel.send(`An Error Occured While Executing That Command \n||${error}||`)
+          console.log(error)
   },
 }
