@@ -1,6 +1,6 @@
 function run(tkn, pfx){
 const Discord = require("discord.js");
-const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_VOICE_STATES', 'GUILD_MESSAGES', 'DIRECT_MESSAGES', 'GUILD_BANS', 'GUILD_EMOJIS_AND_STICKERS', 'GUILD_MEMBERS', 'GUILD_MESSAGE_REACTIONS', 'GUILD_INTEGRATIONS', 'GUILD_PRESENCES', 'GUILD_SCHEDULED_EVENTS', 'DIRECT_MESSAGE_TYPING', 'GUILD_INVITES'], allowedMentions: { parse: ['users'], repliedUser: true, ws: { properties: { $browser: "Discord iOS" }} } });
+const client = new Discord.Client({ intents: ['GUILDS', 'GUILD_VOICE_STATES', 'GUILD_MESSAGES', 'DIRECT_MESSAGES', 'GUILD_BANS', 'GUILD_EMOJIS_AND_STICKERS', 'GUILD_MEMBERS', 'GUILD_MESSAGE_REACTIONS', 'GUILD_INTEGRATIONS', 'GUILD_PRESENCES', 'GUILD_SCHEDULED_EVENTS', 'DIRECT_MESSAGE_TYPING', 'GUILD_INVITES'], allowedMentions: { parse: ['users'], repliedUser: true}, ws: { properties: { $browser: "Discord iOS" }} });
 const fs = require("fs");
 const DisTube = require("distube");
 const { SpotifyPlugin } = require("@distube/spotify");
