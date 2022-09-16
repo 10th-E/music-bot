@@ -56,8 +56,6 @@ for (const file of distubeEvents) {
 client.login(tkn)
 }
 
-run(process.env.TOKEN, "e!")
-run(process.env.TOKEN_2, "p!")
 run(process.env.TOKEN_3, "t!")
 
 /*
